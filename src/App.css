@@ -20,5 +20,18 @@ body {
   background-color: var(--main-clr);
   color: var(--main-clrW);
   font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  display: grid;
+  place-content: center;
 }
 
+.main-container {
+  /* background-color: hotpink; */
+  height: 100vh;
+  min-width: 350px;
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1em;
+}

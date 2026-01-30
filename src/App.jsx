@@ -1,12 +1,20 @@
 import React from 'react'
 import './App.css'
+import Home from './components/Home'
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
 
 function App() {
 
   return (
-    <>
-    <h1>hello I'm harman</h1>
-    </>
+    <div className='main-container'>
+      <Home 
+        name='Harman'
+      />
+      <Projects />
+      <Contact />
+    </div>
   )
 }
 
