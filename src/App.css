@@ -47,6 +47,10 @@ body {
   /* margin-top: 1em; */
 }
 
+h2 {
+  font-family: "Lora", sans-serif;
+}
+
 .home-container {
   margin-top: 4.5em;
 }
@@ -67,7 +71,7 @@ body {
   width: 4.5em;
   border-radius: 1em;
   transform: rotate(-4deg);
-  border: .15em solid var(--palette-800);
+  border: .15em solid var(--palette-700);
   box-shadow: 0px 3px 4px var(--palette-600);
   transition: all ease-in-out .5s;
   cursor: pointer;
@@ -78,19 +82,20 @@ body {
 }
 
 .project-main-div {
-  background: linear-gradient(180deg, var(--palette-200), var(--palette-50));
+  margin-top: 1em;
+  background: linear-gradient(180deg, var(--palette-300), var(--palette-50));
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: .5em 1em;
   border-radius: .5em;
-  border: .1em solid var(--palette-700);
+  border: .1em solid var(--palette-400);
   transition: all ease-in-out .3s;
 }
 
 .project-main-div:hover {
-  box-shadow: 0px 4px 4px var(--palette-300);
   transform: scale(1.02);
+  background: linear-gradient(180deg, var(--palette-200), var(--palette-50));
 }
 
 .project-para {
@@ -98,8 +103,54 @@ body {
 }
 
 .link-btn, .github-btn  {
-  padding: .5em;
+  padding: .8em .9em;
   border-radius: .5em;
+  border: .1em solid var(--palette-600);
+  margin-right: .4em;
+  background-color: var(--palette-100);
+  transition: all ease-in-out .3s;
+}
+
+.link-btn:hover, .github-btn:hover {
+  background-color: var(--palette-200);
+}
+
+.contact-container {
+  padding-bottom: 4.5em;
+}
+
+.contact-contents {
+  background-color: var(--palette-50);
+  padding: 1em;
+  border-radius: .8em;
+  border: .1em solid var(--palette-300);
+}
+
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.contact-btn {
+  display: flex;
+  align-items:  center;
+  padding: .5em 1em;
+  gap: .5em;
+  font-family: inherit;
+  background: var(--palette-100);
+  border-radius: .5em;
+  border: .1em solid var(--palette-700);
+  transition: all ease-in-out .3s;
+  color: var(--palette-800);
+}
+
+.contact-btn:hover {
+  background-color: var(--palette-200);
+}
+
+a {
+  color: var(--palette-600);
 }
 
 @media screen and (min-width: 640px){
@@ -119,5 +170,9 @@ body {
     width: 6em;
   }
 
-
+  .contact-btns {
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+  }
 }

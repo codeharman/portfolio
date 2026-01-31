@@ -11,8 +11,12 @@ export default function Projects(props){
           <p>{props.techStack}</p>
         </div>
         <div>
-          <button className='link-btn'><Link /></button>
-          <button className='github-btn'><Github /></button>
+          <button className='link-btn'>
+            <Link color='#1B4B4B' size={16} strokeWidth={1.5}/>
+          </button>
+          <button className='github-btn'>
+            <Github color='#1B4B4B' size={16} strokeWidth={1.5}/>
+          </button>
         </div>
       </div>
     </div>
