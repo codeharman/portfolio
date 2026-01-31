@@ -12,7 +12,10 @@ function App() {
       <Home 
         name='Harman'
       />
-      <Projects />
+      <Projects 
+        projectName='Expense tracker'
+        techStack='React, Tailwind'
+      />
       <Contact />
     </div>
   )

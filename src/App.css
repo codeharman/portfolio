@@ -2,24 +2,34 @@
 /* foreground: #222222 */
 /* button: #f2f2f2 */
 
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
 :root {
-  --main-clr:#1c1c1c;
-  --main-clrW: #fbfaf9;
-  --text-clr: #222222;
-  --button-clr: #f2f2f2;
+  --main-clr: #fbfaf9;
+  --para-clr: #5e5e5e;
+  --palette-clr: #297373;
+  --palette-50: #ECF8F8;
+  --palette-100: #DAF1F1;
+  --palette-200: #B4E4E4;
+  --palette-300: #8FD6D6;
+  --palette-400: #69C9C9;
+  --palette-500: #44BBBB;
+  --palette-600: #369696;
+  --palette-700: #297070;
+  --palette-800: #1B4B4B;
+  --palette-900: #0E2525;
+  --palette-950: #091A1A;
 }
 
 body {
   background-color: var(--main-clr);
-  color: var(--main-clrW);
-  font-family: "Noto Sans", sans-serif;
+  color: var(--text-clr);
+  font-family: "Bricolage Grotesque", sans-serif;
   margin: 0;
   display: grid;
   place-content: center;
@@ -34,4 +44,80 @@ body {
   flex-direction: column;
   gap: 2em;
   padding: 1em;
+  /* margin-top: 1em; */
+}
+
+.home-container {
+  margin-top: 4.5em;
+}
+
+.home-header {
+  font-size: 1.6rem;
+  font-family: "Lora", serif;
+  color: var(--palette-clr);
+}
+
+.home-para {
+  color: var(--para-clr);
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+}
+
+.home-img {
+  width: 4.5em;
+  border-radius: 1em;
+  transform: rotate(-4deg);
+  border: .15em solid var(--palette-800);
+  box-shadow: 0px 3px 4px var(--palette-600);
+  transition: all ease-in-out .5s;
+  cursor: pointer;
+}
+
+.home-img:hover {
+  transform: scale(1.1) translateX(10px);
+}
+
+.project-main-div {
+  background: linear-gradient(180deg, var(--palette-200), var(--palette-50));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5em 1em;
+  border-radius: .5em;
+  border: .1em solid var(--palette-700);
+  transition: all ease-in-out .3s;
+}
+
+.project-main-div:hover {
+  box-shadow: 0px 4px 4px var(--palette-300);
+  transform: scale(1.02);
+}
+
+.project-para {
+  line-height: .5em;
+}
+
+.link-btn, .github-btn  {
+  padding: .5em;
+  border-radius: .5em;
+}
+
+@media screen and (min-width: 640px){
+  .main-container{
+    min-width: 600px;
+  }
+  .home-header {
+    font-size: 2.5rem;
+  }
+
+  .home-para {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .home-img {
+    width: 6em;
+  }
+
+
 }
