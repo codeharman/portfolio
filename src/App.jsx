@@ -4,6 +4,7 @@ import Home from './components/Home'
 import ProjectsRender from './components/ProjectRender'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
+import Skills from './components/Skills'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           name='Harman'
         />
         <ProjectsRender />
+        <Skills />
         <Contact />
       </div>
     </>

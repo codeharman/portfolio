@@ -27,18 +27,17 @@
 }
 
 body {
-  background-color: var(--main-clr);
+  background: linear-gradient(white, var(--palette-100));
   color: var(--text-clr);
   font-family: "Bricolage Grotesque", sans-serif;
   margin: 0;
   display: flex;
   justify-content: center;
   transition: all ease-in-out .5s;
+  min-height: 100vh;
 }
 
 .main-container {
-  /* background-color: hotpink; */
-  height: 100vh;
   min-width: 350px;
   max-width: 375px;
   display: flex;
@@ -46,6 +45,10 @@ body {
   gap: 2em;
   padding: 1em;
   /* margin-top: 1em; */
+}
+
+span {
+  font-weight: 600;
 }
 
 h2 {
@@ -65,7 +68,7 @@ h2 {
 .para {
   color: var(--para-clr);
   line-height: 1.8rem;
-  font-size: 1.1rem;
+  font-size: 8.rem;
 }
 
 .home-img {
@@ -82,21 +85,46 @@ h2 {
   transform: scale(1.1) translateX(10px);
 }
 
+.resume {
+  display: flex;
+  align-items: center;
+  gap: .2em;
+  background: var(--palette-100);
+  padding: .5em 1em;
+  border-radius: .2em;
+  margin: 0;
+}
+
+.resume-a {
+  color: var(--palette-700);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.resume-a:hover {
+  color: var(--palette-600);
+}
+
+.resume-text {
+  color: var(--palette-800);
+  font-size: 1.1em;
+}
+
 .project-main-div {
   margin-top: .6em;
-  background: linear-gradient(180deg, var(--palette-300), var(--palette-50));
+  background: linear-gradient(180deg, var(--palette-100), var(--palette-50));
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: .5em 1em;
-  border-radius: .5em;
+  border-radius: .2em;
   border: .1em solid var(--palette-400);
   transition: all ease-in-out .3s;
 }
 
 .project-main-div:hover {
   transform: scale(1.02);
-  background: linear-gradient(180deg, var(--palette-200), var(--palette-50));
+  background: linear-gradient(var(--palette-200), var(--palette-50));
 }
 
 .project-para {
@@ -121,14 +149,20 @@ h2 {
 .link-btn, .github-btn  {
   padding: .8em .9em;
   border-radius: .5em;
-  border: .1em solid var(--palette-600);
+  border: .1em solid var(--palette-700);
   margin-right: .4em;
-  background-color: var(--palette-100);
+  background-color: var(--palette-200);
   transition: all ease-in-out .3s;
 }
 
 .link-btn:hover, .github-btn:hover {
-  background-color: var(--palette-200);
+  background-color: var(--palette-100);
+  cursor: pointer;
+}
+
+.skills {
+  padding: 1em;
+  border: .1em solid var(--palette-300);
 }
 
 .contact-container {
@@ -136,10 +170,9 @@ h2 {
 }
 
 .contact-contents {
-  background-color: var(--palette-50);
   padding: 1em;
-  border-radius: .8em;
-  border: .1em solid var(--palette-300);
+  border-radius: .2em;
+  border: .1em dashed var(--palette-600);
 }
 
 .contact-btns {
@@ -155,14 +188,15 @@ h2 {
   gap: .5em;
   font-family: inherit;
   background: var(--palette-100);
-  border-radius: .5em;
-  border: .1em solid var(--palette-700);
+  border-radius: .2em;
+  border: .1em solid var(--palette-600);
   transition: all ease-in-out .3s;
   color: var(--palette-800);
 }
 
 .contact-btn:hover {
   background-color: var(--palette-200);
+  cursor: pointer;
 }
 
 .mailLink {

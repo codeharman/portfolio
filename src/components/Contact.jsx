@@ -6,6 +6,7 @@ export default function Contact(){
       <h2>Contact here</h2>
       <p className='para'>Let's build something great together.</p>
       <div className='contact-contents'>
+        
         <p>Email: <a className='mailLink' href="mailto:iamsingh.hj@gmail.com">iamsingh.hj@gmail.com</a></p>
         <div className='contact-btns'>
           <button className='contact-btn'>

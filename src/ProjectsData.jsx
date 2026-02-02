@@ -8,9 +8,16 @@ export default [
   },
   {
     id: 2,
-    title: "Tenzies Game",
+    title: "Travel Journal",
     techStack: "React, CSS, HTML, JavaScript",
-    githubUrl: "https://github.com/codeharman/Tenzies",
-    projectUrl: "https://tenzies-codeharman.vercel.app/"
+    githubUrl: "https://github.com/codeharman/Travel-journal",
+    projectUrl: "https://travel-journal-codeharman.vercel.app/"
+  },
+  {
+    id: 3,
+    title: "Glowing Button",
+    techStack: "HTML, CSS",
+    githubUrl: "https://github.com/codeharman/Glowing-Button",
+    projectUrl: "https://glowing-button-coderharman.vercel.app/"
   }
 ]
