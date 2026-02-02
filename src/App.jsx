@@ -1,23 +1,22 @@
 import React from 'react'
 import './App.css'
 import Home from './components/Home'
-import Projects from './components/Projects'
+import ProjectsRender from './components/ProjectRender'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 
 function App() {
 
   return (
-    <div className='main-container'>
-      <Home 
-        name='Harman'
-      />
-      <Projects 
-        projectName='Expense tracker'
-        techStack='React, Tailwind'
-      />
-      <Contact />
-    </div>
+    <>
+      <div className='main-container'>
+        <Home 
+          name='Harman'
+        />
+        <ProjectsRender />
+        <Contact />
+      </div>
+    </>
   )
 }
 
