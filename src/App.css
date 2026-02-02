@@ -151,18 +151,19 @@ h2 {
   border-radius: .5em;
   border: .1em solid var(--palette-700);
   margin-right: .4em;
-  background-color: var(--palette-200);
+  background-color: var(--palette-100);
   transition: all ease-in-out .3s;
 }
 
 .link-btn:hover, .github-btn:hover {
-  background-color: var(--palette-100);
+  background-color: var(--palette-50);
   cursor: pointer;
 }
 
 .skills {
   padding: 1em;
-  border: .1em solid var(--palette-300);
+  border: .1em solid var(--palette-600);
+  background: var(--palette-50);
 }
 
 .contact-container {
@@ -172,7 +173,8 @@ h2 {
 .contact-contents {
   padding: 1em;
   border-radius: .2em;
-  border: .1em dashed var(--palette-600);
+  border: .1em solid var(--palette-600);
+  background: #e8f8f8;
 }
 
 .contact-btns {
